@@ -48,9 +48,10 @@ function Home() {
       <HomerContainer theme={theme}>
         <LeftCol>
           <StyledTitle theme={theme}>
-            All truly strong people are kind
+            Repérez vos besoins, on s’occupe du reste, avec les meilleurs
+            talents
           </StyledTitle>
-          <StyledLink to="/survey/1" $isFullLink test-id="ceci-est-un-test">
+          <StyledLink to="/survey/1" $isFullLink>
             Faire le test
           </StyledLink>
         </LeftCol>

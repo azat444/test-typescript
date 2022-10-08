@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
 import { useTheme } from "../../utils/hooks";
-import banger from "../../assets/banger.jpg";
+import ErrorIllustration from "../../assets/404.svg";
 
 const ErrorWrapper = styled.div`
   margin: 30px;
@@ -32,10 +32,9 @@ function Error() {
   return (
     <ErrorWrapper theme={theme}>
       <ErrorTitle theme={theme}>Oups...</ErrorTitle>
-      <Illustration src={banger} />
+      <Illustration src={ErrorIllustration} />
       <ErrorSubtitle theme={theme}>
-        Il semblerait que la page que vous cherchez n’existe pas, mais vous
-        pouvez lire Vagabond si vous le souhaitez
+        Il semblerait que la page que vous cherchez n’existe pas
       </ErrorSubtitle>
     </ErrorWrapper>
   );

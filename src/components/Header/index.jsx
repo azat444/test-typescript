@@ -4,10 +4,9 @@ import { StyledLink } from "../../utils/style/Atoms";
 import LightLogo from "../../assets/light-logo.png";
 import DarkLogo from "../../assets/dark-logo.png";
 import { useTheme } from "../../utils/hooks";
-import LeLogo from "../../assets/LeLogo.png";
 
 const HomeLogo = styled.img`
-  height: 100px;
+  height: 70px;
 `;
 
 const NavContainer = styled.nav`
@@ -23,7 +22,7 @@ function Header() {
   return (
     <NavContainer>
       <Link to="/">
-        <HomeLogo src={LeLogo} />
+        <HomeLogo src={theme === "light" ? DarkLogo : LightLogo} />
       </Link>
       <div>
         <StyledLink $theme={theme} to="/">
